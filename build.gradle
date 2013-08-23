@@ -1,0 +1,16 @@
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+group = 'http-caching'
+version = '1.0.0'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'javax:javaee-web-api:6.0'
+}
+
+jettyRun.httpPort = 9998
+jettyRun.contextPath = '/test'
