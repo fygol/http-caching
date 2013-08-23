@@ -1,1 +1,7 @@
+.gradle/
+.idea/
+.settings/
 .classpath
+.project
+*.iml
+*~
